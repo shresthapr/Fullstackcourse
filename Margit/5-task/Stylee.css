@@ -1,4 +1,31 @@
-.logo {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2 {
+  margin-bottom: 30px;
+}
+.container {
+  max-width: 1200px;
+  background-color: rgba(300, 300, 300, 0.8)
+  padding: 100px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+
+}
+}.logo {
   background-image: url(https://previews.123rf.com/images/tondone/tondone1606/tondone160600103/64398410-abstract-vector-logo-design-template-creative-yellow-red-wavy-concept-icon.jpg);
   height: 100px;
   width: 100px;

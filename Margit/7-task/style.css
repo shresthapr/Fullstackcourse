@@ -1,0 +1,65 @@
+/*body {
+  background:#236747;
+  height: 60vh;
+}
+main {
+    background-color: white;
+  width: 20%;
+  height: 50vh;
+  padding: 50px;
+  margin: 50px 300px 50px 300px;
+  background-attachment: no-repeat fixed center
+  center/cover;
+}
+header {
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+  margin: 50px 300px 50px 500px;
+  padding: 50px;
+}
+h1 {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+thead {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  margin: 300;
+  padding: 35;
+}
+tbody {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+}
+button {
+  background-color: orange;
+  color: white;
+  padding: 50;
+  cursor:pointer;
+
+}
+
+p {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif
+  padding: 50px;
+}
+span {
+  color: orangered;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+}
+footer {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  margin: 50px 500px 50px 500px;
+  padding: 50px;
+}
+
+*/
+
+form {
+  width: 400px;
+  background-color: green;
+  margin: 20px 200px;
+}
