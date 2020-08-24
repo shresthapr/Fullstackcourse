@@ -1,0 +1,10 @@
+body {background-color: bisque;
+text-align: center;
+line-height:2}
+h1{ font-size: 23px;
+display: inline;}
+header {margin: 20;}
+main {font-size: 14px;
+margin: 10px;
+font-family: cursive;}
+.circle{}
