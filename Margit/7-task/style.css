@@ -1,65 +1,85 @@
-/*body {
-  background:#236747;
-  height: 60vh;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-main {
-    background-color: white;
-  width: 20%;
-  height: 50vh;
-  padding: 50px;
-  margin: 50px 300px 50px 300px;
-  background-attachment: no-repeat fixed center
-  center/cover;
-}
-header {
-  font-size: 35px;
+
+body {
   font-family: "Raleway", sans-serif;
-  margin: 50px 300px 50px 500px;
-  padding: 50px;
+  background-color: #236747;
+  text-transform: capitalize;
 }
-h1 {
-  font-size: 18px;
+a {
+  color: coral;
+  text-decoration: none;
+}
+a {
+  color: chocolate;
+  text-decoration: underline;
+}
+.container {
+  background: white;
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+main .container h1,
+main .container p,
+main .container form button,
+main .container .formGroup {
+  margin-bottom: 20px;
+}
+
+main .container .formGroup {
+  margin: 20px 0;
+}
+main .container .formGroup label {
+  display: block;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+main .container.formGroup label {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a4a4a4;
+  border-radius: 5px;
+}
+main .container.formGroup label {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a4a4a4;
+  border-radius: 5px;
   font-family: "Raleway", sans-serif;
+  font-size: 13px;
 }
-thead {
-  font-size: 12px;
-  font-family: "Raleway", sans-serif;
-  margin: 300;
-  padding: 35;
-}
-tbody {
-  font-size: 12px;
-  font-family: "Raleway", sans-serif;
-}
-button {
-  background-color: orange;
+main .container form button {
+  width: 80%;
+  background-color: coral;
   color: white;
-  padding: 50;
-  cursor:pointer;
-
-}
-
-p {
-  font-size: 12px;
-  font-family: "Raleway", sans-serif
-  padding: 50px;
-}
-span {
-  color: orangered;
-  font-size: 12px;
+  border: none;
+  padding: 10px;
   font-family: "Raleway", sans-serif;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 20px;
 }
+
+main .container form button:hover {
+  background-color: chocolate;
+}
+main .container .bottomText {
+  font-size: 12px;
+}
+main .container .bottomText a:hover {
+  text-decoration: underline;
+}
+
 footer {
-  font-size: 12px;
-  font-family: "Raleway", sans-serif;
-  margin: 50px 500px 50px 500px;
-  padding: 50px;
-}
-
-*/
-
-form {
-  width: 400px;
-  background-color: green;
-  margin: 20px 200px;
+  text-align: center;
+  margin-bottom: -30px 0 50px 0;
+  color: white;
 }
