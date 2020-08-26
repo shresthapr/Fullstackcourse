@@ -13,51 +13,55 @@
   <body>
     <header>
       <div id="logo">
-        <a href="#"><img src="/Margit/8-task/logo.png" /></a>
+        <a href="#"><img src="logo.png" alt="logo" /></a>
       </div>
 
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="hero-banner">home</a></li>
+          <li><a href="aboutus">about us</a></li>
+          <li><a href="#">contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <div id="hero-banner">
         <div class="container">
           <div class="textbox">
-            <h1>Welcome to our homepage!</h1>
+            <h1>welcome to our homepage!</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
               tenetur incidunt distinctio commodi omnis aut aliquam quis dolore,
               optio ratione a vel officiis earum, neque fuga minus dicta
               cupiditate eveniet.
             </p>
-
+            <a href="#">read more</a>
             <button type="button">Read more</button>
           </div>
         </div>
       </div>
 
-      <div id="Aboutus">
+      <div id="aboutus">
         <div class="container">
-          <h2>About us</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-            repellendus dicta voluptas, earum veritatis aut reprehenderit cumque
-            est omnis ullam quo a eligendi error sapiente alias nihil! Eum
-            ratione suscipit consequuntur iusto deleniti dolor, nam nobis saepe
-            laborum veritatis, numquam quod magnam blanditiis harum aliquam
-            totam unde molestiae sint magni?
-          </p>
+          <div class="texts">
+            <h2>About us</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+              repellendus dicta voluptas, earum veritatis aut reprehenderit
+              cumque est omnis ullam quo a eligendi error sapiente alias nihil!
+              Eum ratione suscipit consequuntur iusto deleniti dolor, nam nobis
+              saepe laborum veritatis, numquam quod magnam blanditiis harum
+              aliquam totam unde molestiae sint magni?
+            </p>
+          </div>
           <img
             src="https://source.unsplash.com/400x300/?sky"
             alt="About us image"
           />
         </div>
       </div>
+      <div class="clearfix"></div>
     </main>
   </body>
   <footer>
@@ -79,7 +83,8 @@
             <input type="text" name="email" id="email" />
           </div>
           <h3>Do you want to join our newsletter?</h3>
-          <input type="radio" />
+          <input type="radio" value="Yes" />
+          <input type="radio" value="No" />
         </form>
         <h3>How did you find us?</h3>
         <input
@@ -114,6 +119,7 @@
         <button type="submit">Send</button>
       </div>
     </div>
+
     <div id="Contact us">
       <div class="boxes">
         <h2>lorem ipsum dolor sit</h2>
