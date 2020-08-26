@@ -4,14 +4,21 @@
 	box-sizing: border-box;
 }
 
+/* Global  */
+
 body {
-	font-family: "Raleway", sans-serif;
 	background-color: #236747;
+	font-family: "Raleway", sans-serif;
 }
 
 a {
 	color: coral;
 	text-decoration: none;
+}
+
+a:hover {
+	color: chocolate;
+	text-decoration: underline;
 }
 
 input,
@@ -29,10 +36,13 @@ button {
 	text-align: center;
 }
 
-.mm234 {
+/* margin-bottom class for elements where I want to use it */
+.mb20 {
 	margin-bottom: 20px;
 }
-/* mm234 is a new class made and is used to every where, where margin-bottom: 20 is required  */
+
+/* main area with the form */
+
 main .container .form-group label {
 	display: block;
 	font-size: 10px;
@@ -51,14 +61,12 @@ main .container .form-group input {
 main .container form button {
 	width: 80%;
 	background-color: coral;
-	color: white;
 	border: none;
 	padding: 10px;
-	font-family: "Raleway", sans-serif;
+	color: white;
 	border-radius: 5px;
+	text-transform: uppercase;
 	font-size: 13px;
-	margin-bottom: 20px;
-	font-weight: bold;
 }
 
 main .container form button:hover {
@@ -69,10 +77,7 @@ main .container .bottom-text {
 	font-size: 12px;
 }
 
-main .container .bottom-text a:hover {
-	text-decoration: underline;
-	color: chocolate;
-}
+/* footer area */
 
 footer {
 	text-align: center;
