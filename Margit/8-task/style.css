@@ -4,122 +4,167 @@
 	box-sizing: border-box;
 }
 html {
-	scroll-behavior: initial;
+	scroll-behavior: smooth;
 }
 body {
-	background: whitesmoke;
-	font-family: "Comic Neue", cursive;
+	font-family: "Lato", sans-serif;
+	background-color: #f4f4f4;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+p {
+	line-height: 1.5;
+	margin: 12px 0;
+}
+input,
+textarea {
+	padding: 8px;
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	border-radius: 2px;
+	border: 1px solid black;
 }
 
 header {
-	background-color: rgb(255, 255, 255);
-	text-align: center;
-	padding: 0px;
-}
-
-header #logo a img {
-	margin: 0 auto;
-	height: 100px;
-	width: 20%;
 	text-align: center;
 }
-
 ul {
-	list-style: none;
-	padding: 0px;
+	list-style-type: none;
 }
 
 li {
 	display: inline-block;
-	padding: 10px 25px;
-	font-weight: bold;
-	font-size: 20px;
+	padding: 10px;
 }
 
-li a {
+header a {
 	text-decoration: none;
 	color: black;
+	font-size: 20px;
+	text-transform: uppercase;
+	display: block;
+	border-bottom: 4px solid transparent;
+}
+#logo img {
+	width: 200px;
+}
+header a:hover {
+	color: #fe6000;
+	font-weight: bold;
+	border-bottom: 4px solid #fe6000;
+}
+
+#hero-banner {
+	background: url("/Fullstackcourse/Margit/8-task/adg.png") no-repeat center
+		center/cover;
+	height: 75vh;
+}
+#hero-banner .container {
+	padding-top: 100px;
+}
+#hero-banner .textbox {
+	background-color: rgba(230, 111, 0, 0.781);
+	color: white;
+	padding: 20px;
+	border-radius: 5px;
+	width: 500px;
+}
+
+.textbox {
+	font-family: inherit;
+	display: block;
+	background-color: lightcoral;
+	width: 500px;
+	height: 250px;
+}
+
+h2 {
+	font-size: 32px;
+}
+.textbox a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	background-color: black;
+	padding: 15px 15px;
+	margin-top: 15px;
+	border-radius: 2px;
 	text-transform: uppercase;
 }
-
-li a:hover {
-	background-color: turquoise;
-}
-
-main #hero-banner {
-	background: url("adg.png") no-repeat center center/cover;
-	width: 100%;
-	padding: 20px;
-	height: 100vh;
-}
-
-.container {
-	width: 80%;
-	margin: 0px 100px 0px 100px;
-	padding: 20px;
-}
-.container .textbox {
-	width: 450px;
-	height: 300px;
-	background-color: #d28163;
-	padding: 25px;
-	border-radius: 2px;
-	color: white;
-	position: relative;
-	right: 25px;
-	top: 100px;
-}
-
-/* come back to fix the position */
-.textbox h1 {
-	font: bold;
-	font-size: 40px;
-	text-align: left;
-	font-family: "Roboto", sans-serif;
-	margin: 0 auto;
-}
-
-/* 2nd page starts here */
 #aboutus {
-	background-color: whitesmoke;
+	background-color: white;
+	height: 55vh;
 }
-.container2 {
-	width: 80%;
-	margin: 0px 100px 0px 100px;
-	padding: 20px;
+.tofloat {
+	float: left;
+	width: 40%;
+	margin-top: 50px;
 }
-h2 {
-	margin-top: 100px;
-}
-.textbox p {
-	font-family: "Roboto", sans-serif;
-	text-align: left;
-	margin-top: 20px;
-	line-height: 1.8;
-}
-#aboutus .container2 img {
+
+.container img {
 	float: right;
-	margin-left: 50px;
+	width: 40%;
 	border-radius: 5px;
+	margin-top: 20px;
+}
+.clearfix {
 	clear: both;
 }
-
-/* here starts the third page with contacts */
-.container3 {
+footer {
 	background-color: black;
 	color: white;
+	height: 90vh;
 }
-.formgroup label {
-	margin-left: 100px;
+
+form {
+	float: left;
+	width: 40%;
+}
+.boxes {
+	float: right;
+	width: 40%;
+}
+
+.formgroup {
+	margin: 16px 0;
+}
+
+label {
 	display: inline-block;
-	margin-bottom: 25px;
-	text-align: left;
+	width: 150px;
 }
-.formgroup input {
-	width: 20%;
-	padding: 10px;
-	border: 1px solid black;
+form h3 {
+	border-top: 1px dotted white;
+	padding-top: 10px;
+	margin-top: 20px;
+}
+input {
+	width: 56%;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+	margin: 0 20px;
+	width: auto;
+}
+
+textarea {
+	margin-left: 20px;
+	display: block;
 	border-radius: 5px;
-	font-size: 13px;
-	align-items: center;
+	width: 70%;
+}
+
+button {
+	background-color: coral;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	margin: 20px;
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
 }

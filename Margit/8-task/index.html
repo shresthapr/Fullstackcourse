@@ -7,10 +7,8 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
 			rel="stylesheet"
 		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
 			rel="stylesheet"
@@ -21,14 +19,14 @@
 	<body>
 		<header>
 			<div id="logo">
-				<a href="#"><img src="logo.png" alt="logo" /></a>
+				<a href="aboutus"><img src="logo.png" alt="logo" /></a>
 			</div>
 
 			<nav>
 				<ul>
 					<li><a href="hero-banner">Home</a></li>
 					<li><a href="aboutus">About us</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="contactus">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -37,30 +35,30 @@
 			<div id="hero-banner">
 				<div class="container">
 					<div class="textbox">
-						<h1>Welcome to our homepage!</h1>
+						<h2>Welcome to our homepage!</h2>
 						<p>
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
 							tenetur incidunt distinctio commodi omnis aut aliquam quis minus
 							dicta cupiditate eveniet.
 						</p>
-						<a href="#">read more</a>
-						<button type="button">Read more</button>
+						<a href="#">Read more</a>
 					</div>
 				</div>
 			</div>
 
 			<div id="aboutus">
-				<div class="container2">
-					<!-- might not need this class-->
-					<h2>About us</h2>
-					<p>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-						repellendus dicta voluptas, earum veritatis aut reprehenderit cumque
-						est omnis ullam quo a eligendi error sapiente alias nihil! Eum
-						ratione suscipit consequuntur iusto deleniti dolor, nam nobis saepe
-						laborum veritatis, numquam quod magnam blanditiis harum aliquam
-						totam unde molestiae sint magni?
-					</p>
+				<div class="container">
+					<div class="tofloat">
+						<h2>About us</h2>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+							repellendus dicta voluptas, earum veritatis aut reprehenderit
+							cumque est omnis ullam quo a eligendi error sapiente alias nihil!
+							Eum ratione suscipit consequuntur iusto deleniti dolor, nam nobis
+							saepe laborum veritatis, numquam quod magnam blanditiis harum
+							aliquam totam unde molestiae sint magni?
+						</p>
+					</div>
 
 					<img
 						src="https://source.unsplash.com/500x300/?sky"
@@ -72,66 +70,60 @@
 		</main>
 	</body>
 	<footer>
-		<div id="Contact us">
-			<div class="container3">
-				<h2>Contact Us</h2>
+		<div id="contactus">
+			<div class="container">
 				<form>
+					<h2>Contact Us</h2>
+
 					<div class="formgroup">
 						<label for="firstname">First name</label>
-						<input type="text" name="firstname" id="firstname" />
+						<input type="text" id="firstname" name="firstname" />
 					</div>
 
 					<div class="formgroup">
 						<label for="lastname">Last Name</label>
-						<input type="text" name="lastname" id="lastname" />
+						<input type="text" id="lastname" name="lastname" />
 					</div>
 					<div class="formgroup">
 						<label for="email">Email</label>
-						<input type="text" name="email" id="email" />
+						<input type="text" id="email" name="email" />
 					</div>
-					<hr />
-					<h3>Do you want to join our newsletter?</h3>
-					<input type="radio" value="Yes" />
-					<input type="radio" value="No" />
-				</form>
-				<hr />
-				<h3>How did you find us?</h3>
-				<input
-					type="checkbox"
-					id="Findus"
-					name="How did you find us"
-					value="How do you find us"
-				/>
-				<label for="Friend told me">Friend told me</label><br />
-				<input
-					type="checkbox"
-					id="Findus"
-					name="How did you find us"
-					value="How do you find us"
-				/>
-				<label for="Found in the internet">Found in the internet</label><br />
-				<input
-					type="checkbox"
-					id="Findus"
-					name="How did you find us"
-					value="How do you find us"
-				/>
-				<label for="Saw in social media">Saw in social media</label><br />
-				<input
-					type="checkbox"
-					id="Findus"
-					name="How did you find us"
-					value="How do you find us"
-				/>
-				<label for="Other">Other: <input type="text" value="How?" /></label
-				><br />
-				<button type="submit">Send</button>
-			</div>
-		</div>
 
-		<div id="Contact us">
+					<h3>Do you want to join our newsletter?</h3>
+					<div class="formgroup">
+						<input type="radio" id="yasnoo" name="yesno" />
+						<label for="yasnoo">Yes</label>
+					</div>
+					<div class="formgroup">
+						<input type="radio" id="yasnoo" name="yesno" />
+						<label for="yasnoo">No</label>
+					</div>
+
+					<h3>How did you find us?</h3>
+					<div class="formgroup">
+						<input type="checkbox" id="Friend" name="Friend" />
+						<label for="Friend told me">Friend told me</label>
+					</div>
+					<div class="formgroup">
+						<input type="checkbox" id="internet" name="internet" />
+						<label for="internet">Found in the internet</label>
+					</div>
+					<div class="formgroup">
+						<input type="checkbox" id="socailmedia" name="social media" />
+						<label for="socialmedia">Saw in social media</label>
+					</div>
+					<div class="formgroup">
+						<input type="checkbox" id="other" name="other" />
+						<label for="other">Other:</label>
+					</div>
+					<textarea name="explain" id="explain" placeholder="How?"></textarea>
+					<button type="submit">Send</button>
+					<button type="reset">Reset</button>
+				</form>
+			
+
 			<div class="boxes">
-				<h2>lorem ipsum dolor sit</h2>
+				<h3>lorem ipsum dolor sit</h3>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem
 					dolore unde quas quos, porro consectetur sed optio est? Animi minima
