@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* MAKES THE CONTENT INSIDE THE BOX */
+}
+
+body {
+	background-color: #f4f4f4;
+	font-family: "Lato", sans-serif;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+}
+p {
+	line-height: 1.5;
+	margin: 12px 0;
+}
+input,
+textarea {
+	padding: 8px;
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	border-radius: 2px;
+	border: 1px solid #333333;
+}
+/* need to put font family as they do not take the font family from body automatically*/
+
+/* global setting above this point are used throughout and they can be overwritten in required later*/
+/* Header */
+
+header {
+	text-align: center;
+}
+
+header.logo img {
+	width: 200px;
+}
+header nav ul {
+	list-style-type: none;
+}
+header nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+header nav ul li a {
+	color: #333333;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 20px;
+	display: block;
+	border-bottom: 4px solid transparent;
+}
+/* border-bottom: 4px solid transparent; this removes the texts from jumping up and down, more space is cereated in between the nav bar and the page below*/
+header nav ul li a:hover {
+	color: #fe6000;
+	font-weight: bold;
+	border-bottom: 4px solid #fe6000;
+}
+/* hero banner */
+#hero-banner {
+	background: url("https://source.unsplash.com/featured/?sky") no-repeat center
+		center/cover;
+	height: 75vh;
+}
+#hero-banner .container {
+	padding-top: 100px;
+}
+#hero-banner .content {
+	background-color: rgba(255, 166, 0, 0.9);
+	padding: 20px;
+	color: white;
+	border-radius: 5px;
+	width: 500px;
+}
+
+#hero-banner .content h2 {
+	font-size: 32px;
+}
+#hero-banner .content a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #333333;
+	padding: 12px 24px;
+	border-radius: 2px;
+	margin-top: 24px;
+	display: inline-block;
+}
+
+/* about us section */
+#about {
+	background: white;
+	min-height: 65vh;
+}
+#about img {
+	float: right;
+	width: 40%;
+	border-radius: 5px;
+}
+
+#about .texts {
+	float: left;
+	width: 40%;
+}
+.clearfix {
+	clear: both;
+}
+/* clear fix resolves the issues with float, it ends the floating */
+
+/* footer section */
+footer {
+	background-color: #333333;
+	color: white;
+	height: 120vh;
+}
+footer form {
+	float: left;
+	width: 40%;
+}
+footer .right {
+	float: right;
+	width: 40%;
+}
+
+/* form styling*/
+footer form label {
+	width: 150px;
+	display: inline-block;
+}
+
+footer form .formgroup {
+	margin: 16px 0;
+}
+footer form h3 {
+	border-top: 1px dotted white;
+	padding-top: 24px;
+	margin-top: 24px;
+}
+footer form input {
+	width: 55%;
+}
+footer form input[type="radio"],
+footer form input[type="checkbox"] {
+	margin: 0 20px;
+	width: auto;
+} /* this is how type is addressed in css for styling*/
+
+footer form textarea {
+	margin-left: 20px;
+	display: block;
+	width: 95%;
+}
+
+footer form button {
+	padding: 12px 24px;
+	background-color: orange;
+	color: white;
+	border: none;
+	margin: 24px 24px 20px 20px;
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+}
