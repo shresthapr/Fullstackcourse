@@ -57,7 +57,10 @@ header a:hover {
 	font-weight: bold;
 	border-bottom: 4px solid #fe6000;
 }
-
+header #logo a:hover {
+	border-bottom: 1px solid transparent;
+}
+/* when I point to my logo, there is certain movement that should not be there*/
 #hero-banner {
 	background: url("/Fullstackcourse/Margit/8-task/adg.png") no-repeat center
 		center/cover;
@@ -75,7 +78,7 @@ header a:hover {
 }
 
 .textbox {
-	font-family: inherit;
+	font-family: "Lato", sans-serif;
 	display: block;
 	background-color: lightcoral;
 	width: 500px;
