@@ -12,9 +12,9 @@ body {
 }
 
 header {
-	background-color: whitesmoke;
+	background-color: rgb(255, 255, 255);
 	text-align: center;
-	padding: 20px;
+	padding: 0px;
 }
 
 header #logo a img {
@@ -26,12 +26,14 @@ header #logo a img {
 
 ul {
 	list-style: none;
-	padding: 20px;
+	padding: 0px;
 }
 
 li {
 	display: inline-block;
-	padding: 20px;
+	padding: 10px 25px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 li a {
@@ -44,10 +46,10 @@ li a:hover {
 }
 
 main #hero-banner {
-	background: url("adg.png") no-repeat fixed center center/cover;
+	background: url("adg.png") no-repeat center center/cover;
 	width: 100%;
 	padding: 20px;
-	height: 80vh;
+	height: 100vh;
 }
 
 .container {
@@ -55,25 +57,38 @@ main #hero-banner {
 	margin: 0px 100px 0px 100px;
 	padding: 20px;
 }
-.textbox {
-	width: 500px;
+.container .textbox {
+	width: 450px;
 	height: 300px;
 	background-color: #d28163;
 	padding: 25px;
 	border-radius: 2px;
 	color: white;
 	position: relative;
-	right: 150px;
+	right: 25px;
 	top: 100px;
 }
 
 /* come back to fix the position */
 .textbox h1 {
 	font: bold;
-	font-size: 45px;
+	font-size: 40px;
 	text-align: left;
 	font-family: "Roboto", sans-serif;
 	margin: 0 auto;
+}
+
+/* 2nd page starts here */
+#aboutus {
+	background-color: whitesmoke;
+}
+.container2 {
+	width: 80%;
+	margin: 0px 100px 0px 100px;
+	padding: 20px;
+}
+h2 {
+	margin-top: 100px;
 }
 .textbox p {
 	font-family: "Roboto", sans-serif;
@@ -81,19 +96,29 @@ main #hero-banner {
 	margin-top: 20px;
 	line-height: 1.8;
 }
-
-#aboutus {
-	background-color: whitesmoke;
-}
-#aboutus .container img {
+#aboutus .container2 img {
 	float: right;
 	margin-left: 50px;
 	border-radius: 5px;
+	clear: both;
 }
 
-h2 {
-	margin-top: 80px;
+/* here starts the third page with contacts */
+.container3 {
+	background-color: black;
+	color: white;
 }
-p {
-	line-height: 1.8;
+.formgroup label {
+	margin-left: 100px;
+	display: inline-block;
+	margin-bottom: 25px;
+	text-align: left;
+}
+.formgroup input {
+	width: 20%;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 13px;
+	align-items: center;
 }
