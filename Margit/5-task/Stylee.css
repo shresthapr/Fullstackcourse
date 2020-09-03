@@ -1,59 +1,79 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
-body{
-  background-color: none;
-  font-family: Arial, Helvetica, sans-serif;
+body {
+	background-color: none;
+	font-family: "PT sans", sans-serif;
 }
-h1,h2 {
-  margin-bottom: 30px;
+
+h1,
+h2 {
+	margin-bottom: 30px;
 }
 .container {
-  max-width: 1200px;
-  background-color: rgba(300, 300, 300, 0.8)
-  padding: 100px;
-  border-radius: 8px;
-  margin: 0 auto;
+	max-width: 1200px;
+	background-color: rgba(300, 300, 300, 0.8);
+	padding: 50px;
+	border-radius: 8px;
+	margin: 0 auto;
+	min-height: 80%;
 }
 
-
-}
-}.logo {
-  background-image: url(https://previews.123rf.com/images/tondone/tondone1606/tondone160600103/64398410-abstract-vector-logo-design-template-creative-yellow-red-wavy-concept-icon.jpg);
-  height: 100px;
-  width: 100px;
-}
-main {
-    background-color: none;
-    height: 1000px;
-    width: 1000px;
+.logo {
+	background: url(https://previews.123rf.com/images/tondone/tondone1606/tondone160600103/64398410-abstract-vector-logo-design-template-creative-yellow-red-wavy-concept-icon.jpg);
+	height: 100px;
+	width: 100px;
+	float: left;
 }
 
-  .hero-image {
-    background-image: "/Margit/4-task/IMG_8955.jpg";
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 400px;
-    width: 400px;
-  }
-  .hero-text {
-    text-align: right;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: black;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+header {
+	background-color: black;
+	text-align: right;
+	padding: 20px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 20px;
+}
+li {
+	display: inline-block;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+}
+a:hover {
+	background-color: orange;
+}
+
+main #hero-banner {
+	background: url("https://source.unsplash.com/weekly?water") no-repeat fixed
+		center center/cover;
+	height: 85vh;
+	padding: 50px;
+}
+#hero-banner h1 {
+	color: white;
+	text-align: center;
+	font-size: 70px;
+	font-family: "Ubuntu Mono", monospace;
+	margin: 100px;
+}
+h1 span {
+	color: orange;
+}
+
+/*
   .parallax {
     background-image: url("/Margit/4-task/IMG_8955.jpg");
     height: 100%;
@@ -63,34 +83,47 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
   }
+*/
 
-
-  #Past {
-    background-image: none;
-    background-color: antiquewhite;
-  }
-  img {
-    height: 150px;
-    width: 150px;
-    float: left;
-  }
-  #Present {
-    background-image: url(/Margit/4-task/IMG_8955.jpg);
-    background-color: aqua;
-    opacity: 1;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+#Past,
+#Future {
+	background-color: antiquewhite;
+	padding: 50px;
+	width: 100%;
 }
 
-img {
-  height: 200px;
-  width: 200px;
-  float: right;
+main #Past img,
+main #Future img {
+	width: 300px;
+	float: left;
+	border-radius: 5px;
+	margin-right: 50px;
+	height: 150px;
+}
+
+p {
+	line-height: 2;
 }
 
 #Future {
-    
+	background: url("https://source.unsplash.com/random") no-repeat fixed center
+		center/cover;
+	clear: both;
+}
+
+#Present img {
+	float: left;
+	width: 30%;
+	margin-right: 50px;
+	height: 300px;
+}
+.content {
+	padding: 50px;
+}
+
+footer {
+	background-color: black;
+	text-align: center;
+	color: white;
+	padding: 20px;
 }
