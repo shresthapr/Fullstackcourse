@@ -1,46 +1,148 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body{ 
-    background-color:#333;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: white;
-    height:100%
+body {
+	background-color: black;
+	font-family: "Noto Sans JP", sans-serif;
+	color: white;
+	height: 100%;
 }
-h1{
-    padding:20px 0px;
+
+h1 {
+	padding: 20px 0px;
 }
-    
+
 body header ul {
-   
-    background-color: royalblue;
-    Margin: 0px;
-    Padding:20px;
-    list-style: none;
-  
-    
+	background-color: navy;
+	margin: 0px;
+	padding: 20px;
+	list-style: none;
 }
 
-li{
-    display: inline-block;
-    text-align: left;
-
+li {
+	display: inline-block;
+	text-align: left;
 }
-body header ul li a {  
-    color: white;
-    Padding:10px;
-    font-size: 15px;
-    text-decoration: none;
-   
-}
-
-li a:hover{
-    background-color: tomato;
+body header ul li a {
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-right: 20px;
 }
 
-main img {
-    float: left;
-    margin-right:20px;
+li a:hover {
+	background-color: tomato;
+}
+
+img {
+	width: 500px;
+	height: 250px;
+	float: left;
+	margin-right: 30px;
+	margin-left: 50px;
+}
+main p {
+	line-height: 1.8;
+	margin-right: 80px;
+	font-size: bold;
+	color: white;
+	font-size: 20px;
+}
+
+#boxes {
+	background: url("https://source.unsplash.com/random") no-repeat fixed
+		center/cover;
+}
+h1 {
+	font-size: 45px;
+	font-weight: bold;
+	color: white;
+	font-family: "Noto Sans JP", sans-serif;
+}
+.online {
+	display: block;
+	height: 200px;
+	width: 200px;
+	margin: 50px;
+	display: inline-block;
+}
+.box1 {
+	background-color: crimson;
+	border-radius: 5px;
+	border: 15px dotted yellow;
+}
+
+.box2 {
+	background-color: navy;
+	border-radius: 10px;
+	border: 10px solid greenyellow;
+}
+
+.box3 {
+	background-color: turquoise;
+	border-radius: 5px;
+	border: 10px double crimson;
+}
+.box4 {
+	background-color: magenta;
+	border-radius: 5px;
+	border: 10px dashed blue;
+}
+
+.box5 {
+	background-color: rgb(17, 221, 62);
+	border-radius: 50%;
+	border: 5px dotted black;
+}
+
+#contacts {
+	background: url("https://source.unsplash.com/random") repeat center/cover;
+}
+#contacts main {
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	display: block;
+}
+
+h3 {
+	color: white;
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 80px;
+}
+table {
+	background: white;
+	color: black;
+	width: 100%;
+	border-collapse: collapse;
+	font-weight: 900;
+}
+
+thead {
+	background: black;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+tr {
+	display: table-row;
+
+	text-align: center;
+	vertical-align: inherit;
+}
+td {
+	display: table-cell;
+	padding: 20px;
+	border-right: none;
+	border-bottom: 1px solid black;
 }
