@@ -27,10 +27,13 @@ h2 {
 }
 
 .logo {
-	background: url(https://previews.123rf.com/images/tondone/tondone1606/tondone160600103/64398410-abstract-vector-logo-design-template-creative-yellow-red-wavy-concept-icon.jpg);
-	height: 100px;
-	width: 100px;
+	background: url("https://source.unsplash.com/weekly?water");
+
+	height: 60px;
+	width: 60px;
 	float: left;
+}
+
 }
 
 header {
@@ -73,18 +76,16 @@ h1 span {
 	color: orange;
 }
 
-/*
-  .parallax {
-    background-image: url("/Margit/4-task/IMG_8955.jpg");
-    height: 100%;
+/*.parallax {
+	background-image: url("/Margit/4-task/IMG_8955.jpg");
+	height: 100%;
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 */
-
 #Past,
 #Future {
 	background-color: antiquewhite;
@@ -126,4 +127,47 @@ footer {
 	text-align: center;
 	color: white;
 	padding: 20px;
+}
+footer p {
+	margin-top: 20px;
+	padding: 10px;
+	font-size: 12px;
+}
+footer .container {
+	background-color: black;
+}
+
+form {
+	margin: 0 auto;
+	width: 60%;
+	text-align: left;
+}
+.formgroup {
+	margin: 32px 0;
+}
+label {
+	width: 200px;
+	display: inline-block;
+	text-align: left;
+}
+input,
+textarea {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	width: 50%;
+	border-radius: 5px;
+	border: none;
+}
+textarea {
+	min-height: 100px;
+}
+button {
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	border: none;
+	padding: 20px 20px;
+	font-size: inherit;
+	margin-left: 200px;
 }
