@@ -43,16 +43,15 @@ li {
 a {
 	color: white;
 	text-decoration: none;
+	padding: 1rem;
 	text-transform: uppercase;
 }
 
-a:link {
-	color: white;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: 1rem;
+nav ul li a:hover {
+	color: green;
+	text-decoration: underline;
 }
-/* check the styling for a */
+/* check the styling for a  why are the a:link not in white*/
 a:visited {
 	color: orange;
 	text-decoration: none;
@@ -74,14 +73,17 @@ main .container {
 	left: 60px;
 	color: white;
 	padding: 1rem;
+
 	line-height: 1.8;
 	background-color: rgb(231, 89, 231);
 }
-section {
+main section {
 	height: 100vh;
 	position: relative;
 	background: url("IMG_8955.jpg") no-repeat fixed center center/cover;
 }
+
+/* IF I REMOVE THE POSITION OF SECTION THE ::AFTER WIll STILL BE SAME, WHY?? I EXPECT IT TO START FROM THE VERY TOP
 /** if you are using after or before it always have to have content in it */
 section::after {
 	position: absolute;
@@ -111,20 +113,20 @@ p:last-child {
 	color: green;
 	background-color: magenta;
 } */
-
+The last child will make changes to the last child under each section, body footer header wherever there are p
 /* this will select the 3rd or nth paragraph and change the styling of it */
 /* p:nth-child(3) {
 	color: yellow;
 	background-color: indigo;
 } */
-
+If the parent contents position is defined relative, then for the child element when position is assigned they will stay in a place in relation to the parent element. If the postion of the parent element is not relative, then the child element will take the defult position i.e wherever the empty space is organised by default position, like when new element is added.
 /* every 2nd paragraph is selected starting from 3rd paragraph 2n+3 and styled accordingly */
 /* p:nth-child(2n + 3) {
 	color: maroon;
 	background-color: khaki;
 } */
 
-main .textbox {
+ main .textbox {
 	position: relative;
 }
 
@@ -133,6 +135,10 @@ main .textbox {
 	position: relative;
 	top: 10px;
 	left: 30px;
+}
+.textbox p:nth-child(8) {
+	background-color: Purple;
+	position: absolute;
 }
 
 .textbox p:nth-child(4) {
