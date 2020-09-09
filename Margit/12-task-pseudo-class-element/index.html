@@ -16,15 +16,12 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
 			rel="stylesheet"
 		/>
+
+		<link rel="shortcut icon" href="Group_4.png" type="image/x-icon" />
 		<script
 			src="https://kit.fontawesome.com/dd61ad13c3.js"
 			crossorigin="anonymous"
 		></script>
-		<link
-			rel="shortcut icon"
-			href="/Fullstackcourse/Margit/12-task pseudo class element/Group 4.png"
-			type="image/x-icon"
-		/>
 	</head>
 	<body>
 		<header>
@@ -35,13 +32,13 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="#home"><i class="fas fa-home fa-spin"></i> Home</a>
+						<a href="#home"><i class="fas fa-home"></i> Home</a>
 					</li>
 					<li>
 						<a href="#about"><i class="fas fa-info fa-spin"></i>About</a>
 					</li>
 					<li>
-						<a href="#contact"><i class="far fa-envelope fa-2x"></i>Contact</a>
+						<a href="#contact"><i class="far fa-envelope fa-1x"></i>Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -54,9 +51,10 @@
 					<p>
 						this paragraph has been poitioned with relative position and
 						indented 60px from the left. <br />Ask the teacher why the paragraph
-						is not contained within the container. <br />!!!!!!!! The container
-						d have z-index assigned that is why it appears on top of the pseudo
-						elements !!!!!
+						is not contained within the container that is because the position
+						has been assigned. If the position is left default/statstic it will
+						be fine <br />!!!!!!!! The container d have z-index assigned that is
+						why it appears on top of the pseudo elements !!!!!
 					</p>
 				</div>
 			</section>
@@ -110,8 +108,8 @@
 					architecto saepe quo, earum iure.
 				</p>
 				<p>
-					THIS IS STYLED WITH POSITION ABSOLUTE.AND IT IS NOT WORKING AS IT
-					SHOULD !!!!!!FIX!!!!!!
+					THIS IS STYLED WITH POSITION ABSOLUTE.AND IT IS WORKING AS IT SHOULD
+					!!!!!!FIXED!!!!!!
 				</p>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
@@ -157,14 +155,16 @@
 				</p>
 			</div>
 		</main>
+
+		<footer>
+			<p>
+				this is the footer section and this has been styled with parent position
+				fixed and the paragraph has been styled with relative. the width is kept
+				at 90% and margin is kept (10px, auto) to arrange the space accordingly.
+				But if prior to assigining margin, if top left is assigned margin will
+				not overwrite those values rather style the margin on top of that
+				values.
+			</p>
+		</footer>
 	</body>
-	<footer>
-		<p>
-			this is the footer section and this has been styled with parent position
-			fixed and the paragraph has been styled with relative. the width is kept
-			at 90% and margin is kept (10px, auto) to arrange the space accordingly.
-			But if prior to assigining margin, if top left is assigned margin will not
-			overwrite those values rather style the margin on top of that values.
-		</p>
-	</footer>
 </html>
