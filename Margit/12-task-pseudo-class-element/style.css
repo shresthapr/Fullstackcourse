@@ -121,10 +121,10 @@ p:last-child {
 } */
 /* If the parent contents position is defined relative, then for the child element when position is assigned they will stay in a place in relation to the parent element. If the postion of the parent element is not relative, then the child element will take the defult position i.e wherever the empty space is organised by default position, like when new element is added. */
 /* every 2nd paragraph is selected starting from 3rd paragraph 2n+3 and styled accordingly */
-/* p:nth-child(2n + 3) {
+p:nth-child(2n + 3) {
 	color: maroon;
 	background-color: khaki;
-} */
+}
 
 main .textbox {
 	position: relative;

@@ -232,9 +232,6 @@ progress::-webkit-progress-value {
 #skills .container .skillbox .expertbox:nth-child(2) {
 	background-color: rgba(0, 0, 0, 0.4);
 }
-.expertbox .icon:nth-child(2n + 1) {
-	background-color: rgba(255, 73, 73, 0.8);
-}
 
 /* main #skills img {
 	width: 300px;
