@@ -65,13 +65,14 @@ header nav ul {
 header nav ul .dropdown {
 	display: inline-block;
 	float: right;
-	overflow: hidden;
+	position: relative;
 }
 header nav ul .dropdownbtn {
 	padding: 0.5rem 0;
 	background-color: inherit;
 	color: white;
 	border: none;
+	outline: none;
 	font-size: inherit;
 	padding: 0.5rem 0;
 	margin: 0 1rem;
@@ -82,7 +83,8 @@ header nav ul .options-dropdown {
 	position: absolute;
 	font-size: inherit;
 	background-color: #141313;
-	min-width: 160px;
+	width: 150px;
+	overflow: auto;
 }
 header nav ul .options-dropdown a {
 	display: block;
@@ -98,7 +100,11 @@ header nav ul .options-dropdown a {
 header nav ul .dropdown:hover .options-dropdown {
 	display: block;
 }
+.dropdown:hover .dropdownbtn {
+	background-color: rgb(228, 130, 95);
+}
 /* dropdown styling section ends */
+
 header nav ul li {
 	display: inline-block;
 	/* you can use flex here too, but its simpler to use inline block */
@@ -265,6 +271,9 @@ progress::-webkit-progress-value {
 	color: #333333;
 	text-shadow: 2px 4px 6px rgb(58, 55, 51);
 }
+#skills .container .skillbox:nth-child(odd) i {
+	color: greenyellow;
+}
 #skills .container .skillbox .expertbox:nth-child(2n + 1) {
 	background-color: rgba(0, 0, 0, 0.3);
 }
@@ -402,11 +411,19 @@ footer form button {
 	main #experience .content {
 		padding: 1rem;
 	}
+	#skills .container .skillbox {
+		flex-direction: column;
+	}
+	#skills .container .skillbox .expertbox {
+		width: 100%;
+		margin: 1rem 0;
+	}
 	#skills .container .skillbox .expertbox i {
 		width: 100%;
-		font-size: 2em;
+		font-size: 3em;
 		padding: 0.5rem;
 		display: inline-flex;
+
 		justify-content: space-evenly;
 	}
 	#skills .expertbox progress {
@@ -457,52 +474,54 @@ main .type2 {
 .box1 {
 	grid-column: 1/2;
 	grid-row: 1/2;
-	background: url("https://source.unsplash.com/1600x900/?apple") no-repeat fixed
+	background: url("https://source.unsplash.com/1600x900/?bike") no-repeat fixed
 		center center/cover;
 }
 .box2 {
 	grid-column: 2/3;
+	background: url("https://source.unsplash.com/400x100/?cycle") no-repeat
+		center/cover;
 	grid-row: 1/2;
-	background: url("https://source.unsplash.com/1600x900/?cycle") no-repeat fixed
-		center center/cover;
 }
-.box3 {
+/* .box3 {
 	grid-column: 3/4;
 	grid-row: 1/2;
 	background: url("https://source.unsplash.com/1600x900/?guitar") no-repeat
-		fixed center center;
-}
+		fixed center center; 
+} */
 .box4 {
-	grid-column: 4/5;
+	grid-column-start: 3;
+	grid-column-end: span 3;
 	grid-row: 1/2;
 	background: url("https://source.unsplash.com/1600x900/?onion") no-repeat
 		center center/cover;
 }
-.box5 {
+/* .box5 {
 	grid-column: 5/6;
 	grid-row: 1/2;
 	background: url("https://source.unsplash.com/1600x900/?tomato") no-repeat
-		fixed center center/cover;
-}
-.box6,
-.box7,
+		fixed center center/cover; 
+ } */
+
+/* .box7, */
 .box8,
 .box9,
 .box10 {
 	grid-row: 2/3;
 }
 .box6 {
-	grid-column: 1/2;
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 2;
 
 	background: url("https://source.unsplash.com/1600x900/?potato") no-repeat
 		fixed center center/cover;
 }
-.box7 {
+/* .box7 {
 	grid-column: 2/3;
 
 	background: url("https://source.unsplash.com/1600x900/?mango") no-repeat fixed
 		center center/cover;
-}
+} */
 .box8 {
 	grid-column: 3/4;
 
@@ -594,4 +613,25 @@ main .type2 {
 
 	background: url("https://source.unsplash.com/1600x900/?grapes") no-repeat
 		fixed center center/cover;
+}
+
+/* .magnification {
+	position: relative;
+	display: inline-block;
+}
+
+.magnification-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.magnification:hover .magnification-content {
+	display: block;
+} */
+.boxi:hover {
+	border: 5px solid #777;
 }

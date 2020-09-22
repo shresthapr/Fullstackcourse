@@ -8,6 +8,7 @@ h2 {
 	font-size: 2rem;
 	font-family: sans-serif;
 }
+
 h2:nth-child(2n + 1) {
 	color: red;
 }

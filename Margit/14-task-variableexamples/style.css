@@ -1,0 +1,84 @@
+:root {
+	--background: lightblue;
+	--primary-color: greenyellow;
+	--secondary-color: cyan;
+	--light-color: #f4f4f4;
+	--dark-color: #333333;
+	--font: "Roboto", sans-serif;
+}
+body {
+	background-color: var(--background);
+	font-family: var(--font);
+	color: var(--light-color);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+.box {
+	background: var(--primary-color);
+	padding: 1rem;
+	min-height: 200px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	transition: background-color 3s;
+}
+/* Shadows styling  i.e BOX shadows or Text Shadows*/
+h1 {
+	text-shadow: 35px -25px 3px var(--primary-color);
+}
+
+.box:nth-child(2n + 1) {
+	text-shadow: 35px -25px 1px var(--secondary-color);
+	box-shadow: -10px 10px 5px var(--dark-color);
+}
+.box:nth-child(even) {
+	text-shadow: 5px 10px 1px var(--dark-color);
+	box-shadow: 5px -10px 5px var(--light-color);
+}
+.box:nth-child(5) {
+	text-shadow: 0px 0px 1px var(--dark-color);
+	box-shadow: 0px 0px 5px var(--secondary-color);
+}
+nav {
+	text-shadow: 0px 2px 3px var(--dark-color);
+}
+
+/* Transitions examples */
+/* {
+    transition-property: all;
+	transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+    all these property can be written in one line as
+    transition: property duration timing-function delay |initial|inherit;
+} */
+.box:hover {
+	background-color: var(--secondary-color);
+}
+
+.circle {
+	border-radius: 50%;
+	background-color: var(--secondary-color);
+
+	height: 200px;
+	width: 200px;
+	margin: 2rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 5px var(--dark-color);
+	transition: all 3s ease-out 2s;
+}
+.circle:hover {
+	background-color: var(--primary-color);
+	height: 100px;
+	width: 100px;
+	color: var(--dark-color);
+}

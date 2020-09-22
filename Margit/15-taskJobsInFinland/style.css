@@ -1,0 +1,158 @@
+:root {
+	--background: #ffffff;
+	--primary-color: #002ea1;
+	--secondary-color: #002ea1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: "finlandica";
+	src: url("/15-taskJobsInFinland/assets/finlandica-regular.ttf") format("ttf");
+	/* url("/15-taskJobsInFinland/assets/finlandica-bold.woff2") format("woff2"); */
+}
+body {
+	background-color: var(--background);
+	font-family: "finlandica", "Sans-seriff", "seriff";
+	color: black;
+}
+h2 {
+	font-family: "finlandica";
+	text-transform: capitalize;
+	font-weight: bold;
+	color: var(--primary-color);
+	font-size: 3rem;
+	padding: 1rem;
+	font-style: normal;
+}
+h3 {
+	font-family: "finlandica";
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 1rem;
+}
+h4,
+h5 {
+	font-family: "finlandica";
+	text-transform: capitalize;
+	color: white;
+}
+p {
+	font-family: "finlandica";
+	font-size: 1.5rem;
+	padding: 1rem;
+}
+footer p {
+	font-family: "finlandica";
+	color: white;
+	font-style: normal;
+}
+/* Header area */
+header {
+	padding: 1rem;
+	margin: 1rem;
+}
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	margin: 1rem;
+}
+header nav ul .listtop li {
+	padding: 1rem;
+	margin: 1rem;
+}
+header nav ul .listbottom {
+	background-color: var(--primary-color);
+	padding: 1rem;
+	display: 1rem;
+}
+
+header nav ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+/* Body Main section  */
+main .container {
+	width: 1200px;
+	height: 100vh;
+	padding: 1rem;
+	background-color: white;
+	margin: 0 auto;
+}
+
+/* Hero section */
+#hero-banner {
+	background: url("https://source.unsplash.com/featured/?jobs") no-repeat center
+		center/cover;
+	width: 100%;
+	min-height: 80vh;
+}
+.categorygrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	grid-gap: 1rem;
+}
+.categorygrid a {
+	height: 200px;
+	display: flex;
+}
+.categorygrid a img {
+	width: 100%;
+	height: inherit;
+}
+
+.clickbtn {
+	padding: 1rem;
+	background-color: var(--primary-color);
+	color: white;
+	font-family: "finlandica";
+	font-size: 1rem;
+	margin-bottom: 4rem;
+	border-radius: 5px;
+	height: 3rem;
+}
+
+/* Location grouping section */
+.regiongrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2 1fr);
+	grid-gap: 1rem;
+}
+.regiongrid a {
+	height: 200px;
+	background: url("https://source.unsplash.com/featured/?helsinki") no-repeat
+		center center/cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+/* Footer section */
+footer {
+	background-color: var(--primary-color);
+	padding: 1rem;
+	position: relative;
+	margin-top: 10rem;
+}
+.footcontainer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	margin-top: 2rem;
+}
+.footerlogo {
+	grid-area: 1 / span 1;
+}
+.footerlimks {
+	grid-area: 2 / span 1;
+}
+.contgrid {
+	grid-column: 4/5;
+	grid-row: 1/1;
+}
