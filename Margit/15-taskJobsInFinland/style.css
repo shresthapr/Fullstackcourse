@@ -50,7 +50,7 @@ footer p {
 	font-style: normal;
 }
 /* Header area */
-header ul {
+header ul .litstop {
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem;
@@ -58,12 +58,16 @@ header ul {
 	list-style-type: none;
 	color: var(--primary-color);
 }
+nav {
+	position: sticky;
+	top: 0;
+	display: block;
+}
 header nav ul {
 	background-color: var(--primary-color);
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem;
-	margin: 1rem;
 }
 header nav ul .listtop li {
 	padding: 1rem;
@@ -87,9 +91,9 @@ header nav ul li {
 }
 /* Body Main section  */
 main .container {
-	width: 1200px;
-	height: 100vh;
-	padding: 1rem;
+	width: 100%;
+	/* min-height: Should I define here */
+	padding: 50px;
 	background-color: white;
 	margin: 0 auto;
 }
@@ -121,18 +125,19 @@ h3 {
 }
 
 /*jobs by category section */
-.categorygrid {
+main .container .categorygrid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 1rem;
 }
-.categorygrid a {
-	height: 200px;
+main .container .categorygrid a {
+	min-height: 200px;
 	display: flex;
-}
-.categorygrid a img {
-	width: 100%;
-	height: inherit;
+	background: url("https://source.unsplash.com/featured/?random") no-repeat
+		center center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 .clickbtn {
@@ -147,13 +152,13 @@ h3 {
 }
 
 /* Location grouping section */
-.regiongrid {
+main .container .regiongrid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2 1fr);
 	grid-gap: 1rem;
 }
-.regiongrid a {
+main .container .regiongrid a {
 	height: 200px;
 	background: url("https://source.unsplash.com/featured/?helsinki") no-repeat
 		center center/cover;
@@ -179,7 +184,7 @@ footer {
 .footerlogo {
 	grid-area: 1 / span 1;
 }
-.footerlimks {
+.footerlinks {
 	grid-area: 2 / span 1;
 }
 .contgrid {
