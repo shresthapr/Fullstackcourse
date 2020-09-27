@@ -1,0 +1,456 @@
+:root {
+	--primary-color: #002da2;
+	--secondary-color: #000c80;
+	--background-color: #dfdfdf;
+	--dark-color: #212529;
+	--light-color: #ffffff;
+	--font-regular: "Finlandica", sans-serif;
+	--font-bold: "FinlandicaBold", sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: "Finlandica";
+	src: url("assets/fonts/finlandica-regularWeb.woff2") format("woff2"),
+		url("assets/fonts/finlandica-regularWeb.woff") format("woff"),
+		url("assets/fonts/finlandica-regularWeb.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FinlandicaBold";
+	src: url("assets/fonts/finlandica-boldWeb.woff2") format("woff2"),
+		url("assets/fonts/finlandica-boldWeb.woff") format("woff"),
+		url("assets/fonts/finlandica-boldWeb.ttf") format("truetype");
+}
+
+body {
+	font-family: var(--font-regular);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+}
+.container {
+	background: var(--light-color);
+}
+h1 {
+	color: var(--light-color);
+	font-size: 100px;
+	font-family: "Finlandica";
+	text-transform: uppercase;
+	margin-top: 8rem;
+	font-weight: 400;
+}
+h1 span {
+	font-family: "Finlandicabold";
+}
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Finlandica";
+	font-style: normal;
+	text-transform: uppercase;
+	color: var(--light-color);
+}
+
+a {
+	color: var(--light-color);
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.5em;
+	font-family: "Finlandica";
+	font-style: normal;
+	font-size: 24px;
+	padding: 1rem;
+	font-weight: 200;
+	letter-spacing: 1px;
+	white-space: normal;
+}
+header {
+	height: 160px;
+}
+/* Header section: 1st division*/
+header #header-back-link i {
+	color: var(--primary-color);
+	font-size: 0.5rem;
+}
+header #header-back-link a {
+	color: var(--primary-color);
+	font-family: var(--font-regular);
+	font-size: 14px;
+	position: absolute;
+	right: 50px;
+	top: 20px;
+}
+header .containermain {
+	height: 110px;
+	width: 100%;
+}
+header .containermain .logo {
+	margin-left: 50px;
+	text-transform: uppercase;
+	padding-top: 20px;
+}
+header .containermain .logo a {
+	letter-spacing: -2px;
+	line-height: 1.05;
+	font-size: 34px;
+	font-weight: 400;
+	color: var(--primary-color);
+	font-family: var(--font-regular);
+}
+
+/* Header section: 2nd division*/
+header #main-nav {
+	position: sticky;
+	height: 50px;
+	top: 110px;
+	background-color: var(--primary-color);
+	z-index: 1000;
+	width: 100%;
+}
+
+header #main-nav nav {
+	display: flex;
+	justify-content: space-between;
+}
+header #main-nav nav ul {
+	display: flex;
+	margin-left: 30px;
+}
+header #main-nav nav ul li {
+	display: inline-block;
+	padding: 1rem 1rem 0.1rem 1rem;
+
+	text-transform: uppercase;
+	font-family: "Finlandica";
+	font-style: normal;
+	font-weight: 400;
+
+	border-bottom: 4px solid transparent;
+}
+header #main-nav nav ul li:hover {
+	border-bottom: 4px solid var(--light-color);
+}
+
+nav .search i {
+	color: var(--light-color);
+	font-size: 1.5rem;
+	padding: 1rem 2rem 0.7rem 1rem;
+}
+
+/* Dropdown styling*/
+#main-nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: var(--background-color);
+	width: 200px;
+	box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.4);
+	z-index: 2000;
+	margin-top: 15px;
+	left: 100px;
+}
+#main-nav ul li ul a {
+	color: var(--primary-color);
+
+	text-align: left;
+	font-size: 16px;
+	font-family: "Finlandica";
+	font-style: normal;
+	font-weight: 400;
+	text-transform: none;
+}
+#main-nav ul li ul a:hover {
+	background-color: green;
+	border-bottom: none;
+	display: block;
+}
+
+#main-nav ul li:hover ul {
+	display: block;
+}
+
+/* Hero section */
+
+#hero-banner {
+	background: url("https://source.unsplash.com/featured/?jobs") no-repeat center
+		center/cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	transition-duration: 0.3s;
+}
+
+#hero-banner::after {
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: rgb(0, 0, 0, 0.4);
+	top: 0;
+	left: 0;
+}
+main #hero-banner .appearonClick {
+	display: none;
+	position: absolute;
+	padding: 0.8rem;
+	background-color: var(--background-color);
+	z-index: 3000;
+	margin-top: -600px;
+	right: 3rem;
+}
+main #hero-banner input {
+	display: flex;
+	float: left;
+	padding: 0.7rem;
+	color: var(--primary-color);
+	font-size: var(--font-regular);
+	font-family: "Finlandica";
+	box-shadow: none;
+}
+::placeholder {
+	color: var(--primary-color);
+}
+main #hero-banner .appearonClick i {
+	background-color: var(--primary-color);
+	display: flex;
+	padding: 0.7rem;
+}
+#hero-banner .hero-banner-content {
+	height: 95%;
+	width: 50%;
+	color: white;
+	text-align: center;
+	z-index: 50;
+}
+h3.herotext {
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 0.3px;
+	margin-bottom: 10px;
+}
+/* category section */
+#category,
+#region {
+	margin-left: 4rem;
+	margin-right: 5rem;
+	margin-bottom: 10rem;
+}
+#category {
+	margin-top: 5rem;
+}
+#category .content-grid {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem;
+}
+
+#category .content-grid .item {
+	height: 250px;
+
+	align-items: flex-end;
+	background: url("https://source.unsplash.com/featured/?sectors") no-repeat
+		center center/cover;
+}
+#category .content-grid .item a {
+	z-index: 2;
+	padding: 1rem;
+	text-align: left;
+	font-size: 28px;
+	font-weight: 400;
+}
+h2 {
+	font-size: 48px;
+	color: var(--secondary-color);
+	font-weight: 700;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+	line-height: 1rem;
+	font-family: "FinlandicaBold";
+}
+#category .content-grid .item:hover {
+	text-decoration: underline;
+	text-shadow: 0 0 10px #000;
+	/* box-shadow: inset 0 0 0 2000px rgba(0, 17, 62, 0.2); */
+	box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s;
+}
+
+/* region section */
+#region p {
+	margin: 15px;
+	padding: 0;
+}
+#region .btn a {
+	padding: 0.8rem;
+	border-radius: 2px;
+	height: 1.5rem;
+	width: 8rem;
+	background-color: var(--primary-color);
+	position: relative;
+	top: 10px;
+	font-size: 16px;
+	font-family: "Finlandica";
+	font-style: normal;
+	font-weight: 200;
+}
+#region .content-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 80px;
+	grid-gap: 1rem;
+}
+
+#region .content-grid .item {
+	height: 250px;
+	background: url("https://source.unsplash.com/featured/?Finland") no-repeat
+		center center/cover;
+	display: flex;
+	align-items: flex-end;
+}
+#region .content-grid .item a {
+	padding: 1rem;
+	text-align: left;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+#region .content-grid .item:hover {
+	text-decoration: underline;
+	text-shadow: 0 0 10px #000;
+	/* box-shadow: inset 0 0 0 2000px rgba(0, 17, 62, 0.2); */
+	box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s;
+}
+/* footer */
+footer {
+	background-color: var(--primary-color);
+	padding: 1rem;
+	width: 100%;
+}
+footer .footer-content {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 4rem;
+	color: var(--light-color);
+}
+.footer-content span {
+	font-style: var(--font-regular);
+}
+.footer-content .footer-logo {
+	grid-column: 1/2;
+	margin-left: 50px;
+	font-family: "Finlandica";
+	font-style: normal;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 16px;
+}
+.footer-content .footer-middle {
+	grid-column: 2/3;
+}
+.footer-content .footer-middle h4 {
+	font-size: 18px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+.footer-content .footer-middle h5 {
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+	text-transform: none;
+}
+.footer-content .footer-middle p {
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	padding: 0;
+	line-height: normal;
+}
+
+/* .footer-content .footer-middle a {
+	font-weight: bold;
+} */
+.footer-content .footer-right {
+	grid-column: 4/5;
+}
+.footer-content .footer-right li {
+	list-style-type: none;
+	padding: 0.5rem;
+}
+.footer-content .footer-right a {
+	font-weight: bold;
+}
+#scrolltop {
+	position: fixed;
+
+	bottom: 50px;
+	right: 50px;
+	height: 50px;
+	width: 50px;
+	background-color: rgba(255, 255, 255, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#scrolltop i {
+	color: var(--primary-color);
+}
+
+/** Responsive design */
+@media (max-width: 899px) {
+	header {
+		width: 100%;
+	}
+	#hero-banner .hero-banner-content {
+		width: 80%;
+		height: 60%;
+	}
+	h2 {
+		line-height: normal;
+	}
+
+	#category .content-grid,
+	#region .content-grid {
+		width: 100%;
+		display: grid;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	p {
+		margin: auto;
+	}
+	#category .content-grid .item,
+	#region .content-grid .item {
+		margin-bottom: 1rem;
+	}
+
+	footer {
+		width: 100%;
+	}
+	.footer-content .footer-logo {
+		margin-left: 0;
+	}
+
+	.footer-right #scrolltop {
+		position: relative;
+		bottom: 50px;
+		right: 50px;
+	}
+}
+
+@media (max-width: 576px) {
+}
