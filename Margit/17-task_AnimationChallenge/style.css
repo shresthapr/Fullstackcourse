@@ -1,0 +1,28 @@
+:root {
+  --background-color: red;
+  --light-color: green;
+  --dark-color: blue;
+}
+body {
+  background-color: greenyellow;
+}
+
+.first-task {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: honeydew;
+}
+
+.second-task {
+  height: 100px;
+  width: 100px;
+
+  background-color: honeydew;
+}
+.third-task {
+  height: 200px;
+  width: 200px;
+
+  background-color: honeydew;
+}
