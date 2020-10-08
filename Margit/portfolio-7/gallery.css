@@ -1,13 +1,13 @@
 /*****DropDown******/
 
 header nav ul li ul {
-  width: 40%;
+  min-width: 100%;
 }
 
 /**************Collage Styleing********/
 main h1,
 p {
-  padding: 1rem;
+  margin-top: 1rem;
 }
 #img-collection {
   background: white;

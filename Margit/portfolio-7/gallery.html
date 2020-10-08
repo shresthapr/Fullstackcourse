@@ -23,7 +23,7 @@
     />
     <meta name="author" content="Prajan Shrestha" />
     <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
-    <title>Portfolio 4</title>
+    <title>Portfolio 7</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="gallery.css" />
     <link
@@ -35,6 +35,10 @@
       src="https://kit.fontawesome.com/dd61ad13c3.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -52,12 +56,16 @@
         <a href="index.html">MyWeb</a>
       </div>
       <nav>
+        <a onclick="mobilemenu()" href="#" class="icon"
+          ><span class="material-icons"> menu</span></a
+        >
         <ul>
-          <li><a href="#footer">Contact me</a></li>
-          <li><a href="collage.html" target="_blank">Collage</a></li>
-          <li><a href="gallery.html" target="_self">Gallery</a></li>
+          <li><a href="index.html">Portfolio</a></li>
           <li>
-            <a href="#">More <i class="fas fa-caret-down"></i></a>
+            <a onclick="mobilemenu()" href="#"
+              >More <i class="fas fa-caret-down"></i
+            ></a>
+
             <ul>
               <li><a href="index.html#work">Work</a></li>
               <li><a href="index.html#experience">Experience</a></li>
@@ -73,7 +81,10 @@
       <section id="img-collection">
         <div class="main-content">
           <h1>Images Collection</h1>
-          <p>Images by: Prajan Shrestha</p>
+          <p>
+            Images source:
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </p>
           <div class="image-group">
             <div class="grid-box grid-div">
               <img
@@ -185,5 +196,6 @@
         <a href="#"><i class="fas fa-chevron-up"></i></a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
