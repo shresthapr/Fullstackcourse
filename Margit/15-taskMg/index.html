@@ -17,6 +17,7 @@
 	</head>
 
 	<body>
+		
 		<div class="container">
 			<header>
 				<div class="containermain">
@@ -55,15 +56,83 @@
 							<a href="#"> <i class="material-icons">search</i></a>
 						</div>
 					</nav>
+					<div class="search">
+						<div class="btn" onclick="showHide()">
+							<i class="materials-icon">search</i>
+						</div>
+						<div id="search-form" class="hide">
+							<form>
+								<input type="text" placeholder="search" />
+								<button class="btn btn-primary" type="submit">
+									<i class="materials-icon">search</i>
+								</button>
+							</form>
+						</div>
+					</div>
 				</div>
+				<style>
+					.search {
+						position: relative;
+					}
+					.search form {
+						position: absolute;
+						top: 0;
+						right: 30px;
+						background-color: white;
+						padding: 1rem;
+						border-radius: 2px;
+						display: flex;
+						box-shadow: 0 0 5px black;
+					}
+
+					.search form::before {
+						content: "";
+						position: absolute;
+						height: 10px;
+						width: 10px;
+						background-color: white;
+						transform: rotate(45deg);
+						right: 5px;
+						top: -5px;
+					}
+					.search input {
+						font-family: "Finlandica regular";
+						border: 1px solid blue;
+						font-size: inherit;
+						padding: 1rem;
+					}
+					::placeholder {
+						color: blue;
+						opacity: 1;
+					}
+
+					.search .btn {
+						display: inline-block;
+						border-radius: 2px;
+						text-decoration: none;
+						padding: 0.6rem;
+						border: none;
+						margin: 0;
+					}
+
+					.search form .btn {
+						padding: 1rem;
+					}
+					.search .btn i {
+						font-size: 1.2rem;
+					}
+					.hide {
+						display: none !important;
+					}
+				</style>
 			</header>
 			<main>
 				<section id="hero-banner">
-					<div class="appearonClick">
+					<!-- <div class="appearonClick">
 						<input type="text" placeholder="Search" /><i class="material-icons"
 							>search</i
 						>
-					</div>
+					</div> -->
 					<div class="hero-banner-content">
 						<h1><span>Jobs</span> in Finland</h1>
 						<h3 class="herotext">

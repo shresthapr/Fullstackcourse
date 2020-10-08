@@ -1,170 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Free web personal Portfolio on HTML and Css"
-		/>
-		<meta name="author" content="Prajan Shrestha" />
-		<meta name="keywords" content="HTML, CSS, javascript" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Free web personal Portfolio on HTML and Css"
+    />
+    <meta name="author" content="Prajan Shrestha" />
+    <meta name="keywords" content="HTML, CSS, javascript" />
 
-		<title>Pseudo elements</title>
-		<link rel="stylesheet" href="style.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-			rel="stylesheet"
-		/>
+    <title>Pseudo elements</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-		<link rel="shortcut icon" href="Group_4.png" type="image/x-icon" />
-		<script
-			src="https://kit.fontawesome.com/dd61ad13c3.js"
-			crossorigin="anonymous"
-		></script>
-	</head>
-	<body>
-		<header>
-			<p>
-				this header is using position fixed: i.e it will appear on the top even
-				when scrolling down
-			</p>
-			<nav>
-				<ul>
-					<li>
-						<a href="#home"><i class="fas fa-home"></i> Home</a>
-					</li>
-					<li>
-						<a href="#about"><i class="fas fa-info fa-spin"></i>About</a>
-					</li>
-					<li>
-						<a href="#contact"><i class="far fa-envelope fa-1x"></i>Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<section>
-				<div class="container">
-					<h1>Lorem ipsum dolor sit amet.</h1>
+    <link rel="shortcut icon" href="Group_4.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/dd61ad13c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <p>
+        this header is using position fixed: i.e it will appear on the top even
+        when scrolling down
+      </p>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fas fa-info fa-spin"></i>About</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="far fa-envelope fa-1x"></i>Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <h1>Lorem ipsum dolor sit amet.</h1>
 
-					<p>
-						this paragraph has been poitioned with relative position and
-						indented 60px from the left. <br />Ask the teacher why the paragraph
-						is not contained within the container that is because the position
-						has been assigned. If the position is left default/statstic it will
-						be fine <br />!!!!!!!! The container d have z-index assigned that is
-						why it appears on top of the pseudo elements !!!!!
-					</p>
-				</div>
-			</section>
-			<div class="textbox">
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-					minima voluptates, officiis eius dolore voluptate odio a hic, incidunt
-					expedita tempore consequatur autem cum, repudiandae commodi sit
-					laborum aliquid vel nostrum quas? Molestiae accusamus aperiam beatae
-					nam. Dicta reiciendis neque corrupti, saepe, ut et dignissimos cum
-					architecto accusantium sequi ea.
-				</p>
+          <p>
+            this paragraph has been poitioned with relative position and
+            indented 60px from the left. <br />Ask the teacher why the paragraph
+            is not contained within the container that is because the position
+            has been assigned. If the position is left default/statstic it will
+            be fine <br />!!!!!!!! The container d have z-index assigned that is
+            why it appears on top of the pseudo elements !!!!!
+          </p>
+        </div>
+      </section>
+      <div class="textbox">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          minima voluptates, officiis eius dolore voluptate odio a hic, incidunt
+          expedita tempore consequatur autem cum, repudiandae commodi sit
+          laborum aliquid vel nostrum quas? Molestiae accusamus aperiam beatae
+          nam. Dicta reiciendis neque corrupti, saepe, ut et dignissimos cum
+          architecto accusantium sequi ea.
+        </p>
 
-				<p>
-					This is an example of position relative (top=10px, left =30px). Indent
-					on the left can be noticed.
-				</p>
+        <p>
+          This is an example of position relative (top=10px, left =30px). Indent
+          on the left can be noticed.
+        </p>
 
-				<p>
-					This is an example of position using absolute position. To use
-					position absolute the parent (under which this paragraph is nested)
-					position must be relative, else it will be positioned by body.
-				</p>
+        <p>
+          This is an example of position using absolute position. To use
+          position absolute the parent (under which this paragraph is nested)
+          position must be relative, else it will be positioned by body.
+        </p>
 
-				<p>
-					This is an example of using sticky position. The paragraph will stick
-					on its place upon scrolling. the position where the paragraph should
-					be sticking to is defined in top, for this example it is 200px. Hence
-					it will be sticking 200 px below the top i.e the very top of the page.
-					Starting of the body section. left styling does not work, HOW CAN I
-					MAKE INDENTION?
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-					excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
-					veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
-					architecto saepe quo, earum iure.
-				</p>
-				<p>
-					This is another example of position sticky. Note that when there are
-					two stickies, if there are not enough spaces between them when
-					scrolling, the later one will egulf the former stickies as can be seen
-					here when scrolling and if the page is big enough the engulfed sticky
-					will reappear once again upon scrolling. If there is enough space
-					between them they remain in their place.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-					excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
-					veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
-					architecto saepe quo, earum iure.
-				</p>
-				<p>
-					THIS IS STYLED WITH POSITION ABSOLUTE.AND IT IS WORKING AS IT SHOULD
-					!!!!!!FIXED!!!!!!
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-					excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
-					veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
-					architecto saepe quo, earum iure.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-					excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
-					veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
-					architecto saepe quo, earum iure.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-					excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
-					veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
-					architecto saepe quo, earum iure.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-					excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
-					veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
-					architecto saepe quo, earum iure.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-					excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
-					veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
-					architecto saepe quo, earum iure.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-					excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
-					veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
-					architecto saepe quo, earum iure.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-					excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
-					veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
-					architecto saepe quo, earum iure.
-				</p>
-			</div>
-		</main>
+        <p>
+          This is an example of using sticky position. The paragraph will stick
+          on its place upon scrolling. the position where the paragraph should
+          be sticking to is defined in top, for this example it is 200px. Hence
+          it will be sticking 200 px below the top i.e the very top of the page.
+          Starting of the body section. left styling does not work, HOW CAN I
+          MAKE INDENTION?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
+          veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
+          architecto saepe quo, earum iure.
+        </p>
+        <p>
+          This is another example of position sticky. Note that when there are
+          two stickies, if there are not enough spaces between them when
+          scrolling, the later one will egulf the former stickies as can be seen
+          here when scrolling and if the page is big enough the engulfed sticky
+          will reappear once again upon scrolling. If there is enough space
+          between them they remain in their place.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
+          veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
+          architecto saepe quo, earum iure.
+        </p>
+        <p>
+          THIS IS STYLED WITH POSITION ABSOLUTE.AND IT IS WORKING AS IT SHOULD
+          !!!!!!FIXED!!!!!!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
+          veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
+          architecto saepe quo, earum iure.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
+          veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
+          architecto saepe quo, earum iure.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
+          veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
+          architecto saepe quo, earum iure.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
+          veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
+          architecto saepe quo, earum iure.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
+          veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
+          architecto saepe quo, earum iure.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
+          veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
+          architecto saepe quo, earum iure.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          excepturi. Voluptates esse aliquam temporibus, quod hic expedita,
+          veritatis deserunt cum nobis distinctio nesciunt corporis quisquam
+          architecto saepe quo, earum iure.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+          itaque!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
+          laudantium!
+        </p>
 
-		<footer>
-			<p>
-				this is the footer section and this has been styled with parent position
-				fixed and the paragraph has been styled with relative. the width is kept
-				at 90% and margin is kept (10px, auto) to arrange the space accordingly.
-				But if prior to assigining margin, if top left is assigned margin will
-				not overwrite those values rather style the margin on top of that
-				values.
-			</p>
-		</footer>
-	</body>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+          itaque!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
+          laudantium!
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        this is the footer section and this has been styled with parent position
+        fixed and the paragraph has been styled with relative. the width is kept
+        at 90% and margin is kept (10px, auto) to arrange the space accordingly.
+        But if prior to assigining margin, if top left is assigned margin will
+        not overwrite those values rather style the margin on top of that
+        values.
+      </p>
+    </footer>
+  </body>
 </html>

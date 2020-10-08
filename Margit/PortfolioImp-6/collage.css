@@ -1,0 +1,214 @@
+/* Dropdown */
+
+body header nav ul li ul {
+  width: 55%;
+}
+main {
+  top: 0;
+  background: url("https://source.unsplash.com/1600x900/?apple") no-repeat fixed
+    center center/cover;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+main h1 {
+  padding: 1rem;
+}
+/*-------------------GALLERY STYLING --------------------------*/
+
+body .description {
+  position: relative;
+  top: 100px;
+  font-size: 2rem;
+  margin-left: 7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main .type1 {
+  width: 80%;
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 250px 1fr 25% 2fr 5rem;
+  grid-template-rows: 25% 200px 1fr 10rem;
+  column-gap: 10px;
+  row-gap: 10px;
+  position: relative;
+  left: 10%;
+  top: 150px;
+  margin-bottom: 2rem;
+}
+main .type2 {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  background: url("https://source.unsplash.com/1600x900/?apple") no-repeat fixed
+    center center/cover;
+}
+.boxi {
+  color: green;
+  font-size: 2rem;
+}
+
+.box1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background: url("https://source.unsplash.com/1600x900/?bike") no-repeat fixed
+    center center/cover;
+}
+.box2 {
+  grid-column: 2/3;
+  background: url("https://source.unsplash.com/400x100/?cycle") no-repeat
+    center/cover;
+  grid-row: 1/2;
+}
+/* .box3 {
+	grid-column: 3/4;
+	grid-row: 1/2;
+	background: url("https://source.unsplash.com/1600x900/?guitar") no-repeat
+		fixed center center; 
+} */
+.box4 {
+  grid-column-start: 3;
+  grid-column-end: span 3;
+  grid-row: 1/2;
+  background: url("https://source.unsplash.com/1600x900/?onion") no-repeat
+    center center/cover;
+}
+/* .box5 {
+	grid-column: 5/6;
+	grid-row: 1/2;
+	background: url("https://source.unsplash.com/1600x900/?tomato") no-repeat
+		fixed center center/cover; 
+ } */
+
+/* .box7, */
+.box8,
+.box9,
+.box10 {
+  grid-row: 2/3;
+}
+.box6 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+
+  background: url("https://source.unsplash.com/1600x900/?potato") no-repeat
+    fixed center center/cover;
+}
+/* .box7 {
+	grid-column: 2/3;
+
+	background: url("https://source.unsplash.com/1600x900/?mango") no-repeat fixed
+		center center/cover;
+} */
+.box8 {
+  grid-column: 3/4;
+
+  background: url("https://source.unsplash.com/1600x900/?carrot") no-repeat
+    fixed center center/cover;
+}
+.box9 {
+  grid-column: 4/5;
+
+  background: url("https://source.unsplash.com/1600x900/?berries") no-repeat
+    center center/cover;
+}
+.box10 {
+  grid-column: 5/6;
+
+  background: url("https://source.unsplash.com/1600x900/?potato") no-repeat
+    fixed center center/cover;
+}
+
+.box11,
+.box12,
+.box13,
+.box14,
+.box15 {
+  grid-row: 3/4;
+}
+.box11 {
+  grid-column: 1/2;
+
+  background: url("https://source.unsplash.com/1600x900/?citrus") no-repeat
+    fixed center center/cover;
+}
+.box12 {
+  grid-column: 2/3;
+
+  background: url("https://source.unsplash.com/1600x900/?pomogranate") no-repeat
+    fixed center center/cover;
+}
+.box13 {
+  grid-column: 3/4;
+
+  background: url("https://source.unsplash.com/1600x900/?fig") no-repeat fixed
+    center center/cover;
+}
+.box14 {
+  grid-column: 4/5;
+
+  background: url("https://source.unsplash.com/1600x900/?papya") no-repeat fixed
+    center center/cover;
+}
+.box15 {
+  grid-column: 5/6;
+  background: url("https://source.unsplash.com/1600x900/?watermelon") no-repeat
+    fixed center center/cover;
+}
+.box16,
+.box17,
+.box18,
+.box19,
+.box20 {
+  grid-row: 4/5;
+}
+.box16 {
+  grid-column: 1/2;
+
+  background: url("https://source.unsplash.com/1600x900/?banana") no-repeat
+    fixed center center/cover;
+}
+.box17 {
+  grid-column: 2/3;
+
+  background: url("https://source.unsplash.com/1600x900/?lime") no-repeat fixed
+    center center/cover;
+}
+.box18 {
+  grid-column: 3/4;
+
+  background: url("https://source.unsplash.com/1600x900/?guava") no-repeat fixed
+    center center/cover;
+}
+.box19 {
+  grid-column: 4/5;
+
+  background: url("https://source.unsplash.com/1600x900/?pineapple") no-repeat
+    fixed center center/cover;
+}
+.box20 {
+  grid-column: 5/6;
+
+  background: url("https://source.unsplash.com/1600x900/?grapes") no-repeat
+    fixed center center/cover;
+}
+
+/* .magnification {
+	position: relative;
+	display: inline-block;
+}
+
+.magnification-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.magnification:hover .magnification-content {
+	display: block;
+} */
+.boxi:hover {
+  border: 5px solid #777;
+}

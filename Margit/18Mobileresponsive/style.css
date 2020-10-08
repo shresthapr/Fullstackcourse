@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --primary-color: blue;
+    --background-color: salmon;
+    --text-color:white;
+    --font-regular: 'Ubuntu Mono';
+    --highlight-color: lightgreen;
+  }
+  body{
+    background:var(--background-color);
+    background-image: linear-gradient(80deg, lightgreen, salmon, lightgreen);
+    background-size: 300%;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+
+  }
+  a{
+  color:var(--text-color);
+  text-decoration: none;
+  }
+main h1{
+  font-family: var(--font-regular);
+  font-size: 40px;
+}
+main h2{
+  font-family: var(--font-regular);
+  font-size: 2rem;
+
+}
+  /**************** HEADER ****************/
+
+header {
+    padding: 2rem;
+    height: 100px;
+    background-color:var(--primary-color);
+    color:var(--text-color);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+   
+ }
+
+header #logo a{
+    list-style-type: none;
+    font-size: 2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+header .icon {
+  display: none;
+}
+/*********** MAIN NAVIGATION ************/
+  /******  Main menu ******/
+header nav ul{
+  position: relative;
+}
+  /* Main menu list items and links */
+
+header nav ul li{
+    display: inline-block;
+    font-size: 1rem;
+}
+header nav ul li a{
+  padding: 1rem;
+  transition: all 0.4s;
+}
+header nav ul li a:hover{
+  background-color: var(--highlight-color);
+
+}
+/****** Submenu ******/
+  
+  /* Submenu is hidden by default */
+  header nav ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    background-color: var(--highlight-color);
+    transition: all 0.4s;
+  }
+/* This code makes it possible to use tab in navigation */
+/* Show submenu if hovering li*/
+header nav ul li:hover ul,
+header nav ul li:focus-within > ul{
+  visibility: visible;
+  opacity: 1;
+}
+/* Submenu list items */
+header nav ul li ul li{
+  display: block;
+}
+header nav ul li ul li a{
+  display: block;
+  padding: 1rem;
+}
+header nav ul li ul li a:hover{
+  background-color: purple;
+}
+
+/* main section */
+main {
+  margin-top:100px;
+ 
+}
+section {
+  min-height: 25vh;
+}
+
+
+/* Responsive Design */
+
+@media(max-width: 576px) {
+header .icon {
+  display:block
+}
+/* Hide by default all lists */
+
+header nav ul{
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: purple;
+width: 100%;
+}
+   /* Show when list have .mobilemenu class added by JS */
+
+header nav ul.mobilemenu{
+  display: block;
+}
+    /* Styling of the main and submenu */
+
+header nav ul li{
+  display: block;
+
+}
+header nav ul li a{
+  display: block;
+  padding: 1rem;
+}
+header nav ul li a:hover{
+  background-color: rebeccapurple;
+}
+header nav ul li ul{
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  position: relative;
+  top: 0;
+  padding-left: 1rem;
+  background-color: purple;
+}
+
+ 
+}

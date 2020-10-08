@@ -104,6 +104,11 @@ header nav ul .dropdown:hover .options-dropdown {
 	background-color: rgb(228, 130, 95);
 }
 /* dropdown styling section ends */
+/* dropdown styling section ends */
+
+
+
+
 
 header nav ul li {
 	display: inline-block;
@@ -127,6 +132,7 @@ header nav ul li a:hover,
 
 	/* if you are using border-bottom: 2px dotted coral; you have to assign the same but transparent instead of color in na ul li a  so that it wont jump  */
 }
+
 /* Main section starts here */
 main {
 	position: relative;
@@ -249,7 +255,7 @@ main #skills .container {
 	border-radius: 2px;
 	height: 1rem;
 	margin: 0 auto;
-	box-sizing: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 2px rgba(22, 21, 21, 0.2);
 }
 
 progress::-webkit-progress-bar {
@@ -430,6 +436,7 @@ footer form button {
 		height: 0.6rem;
 	}
 }
+
 
 /* gallery.html styling section starts here */
 

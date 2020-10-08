@@ -1,28 +1,237 @@
 :root {
-  --background-color: red;
-  --light-color: green;
-  --dark-color: blue;
+	--background-color: rgb(113, 235, 13);
+	--light-color: rgb(200, 25, 223);
+	--dark-color: rgb(229, 255, 0);
+	--highlight-color: red;
 }
 body {
-  background-color: greenyellow;
+	background-color: rgb(51, 179, 166);
+}
+/* Task 7*/
+body {
+	background: linear-gradient(90deg, green, red, blue, yellow);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 25% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* Task 1*/
 .first-task {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: honeydew;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: var(--background-color);
+	transition: 1s;
 }
-
+.first-task:hover {
+	height: 150px;
+	width: 150px;
+	background-color: var(--light-color);
+}
+/*Task 2*/
 .second-task {
-  height: 100px;
-  width: 100px;
-
-  background-color: honeydew;
+	height: 150px;
+	width: 150px;
+	background-color: var(--light-color);
+	transition: 2s;
 }
-.third-task {
-  height: 200px;
-  width: 200px;
+.second-task:hover {
+	transform: rotate(180deg);
+	background-color: var(--dark-color);
+}
+/*Task 3*/
 
-  background-color: honeydew;
+.third-task {
+	height: 200px;
+	width: 200px;
+	background-color: honeydew;
+	transition: all 3s;
+}
+.third-task p {
+	opacity: 0;
+
+	transition: 2s ease-in-out;
+}
+.third-task:hover {
+	height: 100px;
+	width: 100px;
+}
+.third-task:hover p {
+	opacity: 1;
+}
+/* Task 4 */
+.fourth-task {
+	display: inline-block;
+}
+.fourth-task h3::after {
+	content: "";
+	margin-top: 5px;
+	width: 0;
+	height: 2px;
+	display: block;
+	background: white;
+	transition: all 1s ease-in;
+}
+.fourth-task h3:hover::after {
+	width: 100%;
+}
+/************************* Task 5********************************/
+
+.fifth-task {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	width: 200px;
+	position: relative;
+}
+
+/* TOP PART */
+.fifth-task::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 200px;
+	right: 0;
+	bottom: 0;
+	border-top: 5px solid sandybrown;
+	transition: all 5s;
+}
+.fifth-task:hover::before {
+	left: 0;
+}
+
+/*RightSIDE */
+.fifth-task::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+	border-right: 5px solid sandybrown;
+	transition: all 5s;
+}
+.fifth-task:hover::after {
+	bottom: 0;
+}
+
+/* BOTTOM SIDE */
+.fifth-task h3::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 200px;
+	border-bottom: 5px solid sandybrown;
+	transition: all 5s;
+}
+.fifth-task:hover h3::before {
+	right: 0;
+}
+
+/** Left SIde */
+.fifth-task h3::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 200px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-left: 5px solid sandybrown;
+	transition: all 5s;
+}
+.fifth-task:hover h3::after {
+	top: 0;
+}
+
+/* Task 6 */
+.animated-circle {
+	height: 200px;
+	width: 200px;
+	position: relative;
+	border-radius: 50%;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	background-color: honeydew;
+	animation-name: catchonclick;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	transition: all 1s 0;
+}
+
+@keyframes catchonclick {
+	0% {
+		top: 0;
+		left: 0px;
+	}
+	25% {
+		top: 0px;
+		left: 500px;
+		height: 100px;
+		width: 100px;
+		border-radius: 25%;
+		background-color: var(--light-color);
+	}
+	50% {
+		top: 250px;
+		left: 500px;
+		border-radius: 25%;
+		background-color: var(--dark-color);
+	}
+	75% {
+		top: 250px;
+		left: 0;
+		border-radius: 55%;
+		background-color: yellow;
+	}
+	100% {
+		top: 0;
+		left: 0;
+	}
+}
+
+.animated-circle:hover {
+	animation-play-state: paused;
+}
+
+/*-----------------------FIX THIS--------------------------------*/
+.menu-item h1 {
+	display: inline-block;
+}
+.menu-item h1::after {
+	content: "";
+	height: 4px;
+	width: 100%;
+	display: inherit;
+	background-color: var(--highlight-color);
+	transition: all 0.5s;
+}
+.menu-item:hover h1::before {
+	height: 100%;
+}
+.menu-item:hover h1::before {
+	content: "";
+	height: 4px;
+	width: 100%;
+	display: inherit;
+	background-color: var(--highlight-color);
+	transition: all 0.5s;
 }

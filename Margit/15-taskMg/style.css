@@ -1,7 +1,8 @@
 :root {
 	--primary-color: #002da2;
 	--secondary-color: #000c80;
-	--background-color: #dfdfdf;
+	--background-color: hsl(0, 0%, 87%);
+	--light-blue: rgb(0 45 161 / 5%);
 	--dark-color: #212529;
 	--light-color: #ffffff;
 	--font-regular: "Finlandica", sans-serif;
@@ -187,6 +188,8 @@ nav .search i {
 	justify-content: center;
 	position: relative;
 	transition-duration: 0.3s;
+	background-size: 120%;
+	animation: gradient 10s ease infinite;
 }
 
 #hero-banner::after {
@@ -256,7 +259,6 @@ h3.herotext {
 
 #category .content-grid .item {
 	height: 250px;
-
 	align-items: flex-end;
 	background: url("https://source.unsplash.com/featured/?sectors") no-repeat
 		center center/cover;
@@ -395,22 +397,24 @@ footer .footer-content {
 }
 #scrolltop {
 	position: fixed;
-
+    display: none;
 	bottom: 50px;
 	right: 50px;
 	height: 50px;
 	width: 50px;
 	background-color: rgba(255, 255, 255, 0.7);
-	display: flex;
 	align-items: center;
 	justify-content: center;
+	
+
 }
 #scrolltop i {
 	color: var(--primary-color);
+	
 }
 
 /** Responsive design */
-@media (max-width: 899px) {
+@media (max-width: 992px) {
 	header {
 		width: 100%;
 	}
@@ -425,7 +429,7 @@ footer .footer-content {
 	#category .content-grid,
 	#region .content-grid {
 		width: 100%;
-		display: grid;
+	
 	}
 	h3 {
 		font-size: 20px;
@@ -436,6 +440,7 @@ footer .footer-content {
 	#category .content-grid .item,
 	#region .content-grid .item {
 		margin-bottom: 1rem;
+		height: 100%;
 	}
 
 	footer {
