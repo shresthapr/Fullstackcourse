@@ -144,3 +144,15 @@ main #hero-banner:hover h1::before {
     transform: translateX(20px) rotate(360deg);
   }
 }
+
+@media (max-width: 576px) {
+  .leaf div:nth-child(2) {
+    left: 60%;
+  }
+  .leaf div:nth-child(5) {
+    left: 30%;
+  }
+  .leaf div:nth-child(7) {
+    left: 40%;
+  }
+}
