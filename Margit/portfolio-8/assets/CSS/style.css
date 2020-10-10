@@ -333,13 +333,25 @@ footer form button {
   padding: 1rem 2rem;
   color: var(--bright-color);
   font-size: inherit;
-  margin-left: -50px;
+  margin-left: 12rem;
 }
 
 footer form button:hover {
   cursor: pointer;
   background-color: var(--link-color);
   transition: all 0.4s;
+}
+#footer #resetme {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font: var(--font-regular);
+  border: none;
+  box-shadow: 2px 2px 0px var(--dark-color);
+  margin-left: 4rem;
+}
+#footer p {
+  padding-top: 2rem;
+  margin-bottom: 0;
 }
 /*---------FORm Section ENDS--------*/
 /**** SCROLL TOP *******/
@@ -400,8 +412,15 @@ footer form button:hover {
     width: 100%;
     margin: 0;
   }
+  #footer #resetme {
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
   #scrolltop {
     right: 1rem;
+  }
+  #footer p {
+    padding-top: 1rem;
   }
 }
 /*--------MOBILE--------*/
@@ -500,6 +519,9 @@ footer form button:hover {
   }
   footer form .form-group label {
     margin-bottom: 0.1rem;
+  }
+  #footer #resetme {
+    padding: 0.8rem 2rem;
   }
   #footer p {
     margin-top: 1rem;
